@@ -1,0 +1,342 @@
+/* styles */
+body{
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 1000px;
+	min-height: 4000px;
+	/*background-color: silver;*/
+	position: relative;
+	background-image: url("http://i670.photobucket.com/albums/vv68/Calixte/dark-forest-night-image.jpg");
+}
+.block1{
+	width: 200px;
+	min-height: 400px;
+	/*background-color: silver;*/
+	position: absolute;
+	perspective: 1000px;
+}
+.block2{
+	width: 200px;
+	min-height: 400px;
+	/*background-color: silver ;*/
+	float: left;
+	position: absolute;
+	left: 200px;
+	perspective: 1000px;
+}
+.block3{
+	width: 200px;
+	min-height: 400px;
+	/*background-color: silver;*/
+	float: left;
+	position: absolute;
+	left: 400px;
+	perspective: 1000px;
+
+}
+.block4{
+	width: 200px;
+	min-height: 400px;
+	/*background-color: silver;*/
+	float: left;
+	position: absolute;
+	left: 600px;
+	perspective: 1000px;
+}
+.rotate{
+	-webkit-transform: rotate(-180deg); //Chrome, Safari
+	-moz-transform: rotate(-180deg); //Firefox
+	-o-transform: rotate(-180deg); //Opera
+	-ms-transform: rotate(-180deg); //IE
+	transform: rotate(-180deg); //браузеры без префексов
+}
+img{
+	width: 140px;
+	height: 200px;
+	border-radius: 15px;
+	border: 1px solid grey;
+}
+.cardBody{
+	width: 140px;
+	height: 200px;
+	border: 2px solid grey;
+	border-radius: 15px;
+	margin: 20px;
+	position: relative;
+	background-color: white;
+	transform-style: preserve-3d;
+	transition:transform 1.5s linear
+
+}
+.cardBody:hover{
+	transform: rotateY(180deg);
+	transition:transform 0.5s linear
+}
+.card{
+	width: 140px;
+	height: 200px;
+	border: 2px solid grey;
+	border-radius: 15px;
+	margin: 0;
+	position: absolute;
+	background-color: black;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	top: 0px;
+}
+
+.red {
+	color: white;
+}
+.black {
+	color: red;
+}
+.n1 .char {
+	position: absolute;
+	margin: 10px;
+	left: 2px;
+	top: 0px;
+	font-size: 1.1em;
+}
+.n1 .num {
+	position: absolute;
+	margin: 10px;
+	left: 2px;
+	top: 15px;
+}
+.n2 .char {
+	position: absolute;
+	margin: 10px;
+	right: 2px;
+	bottom: 0px;
+	font-size: 1.1em;
+}
+.n2 .num {
+	position: absolute;
+	margin: 10px;
+	right: 2px;
+	bottom: 15px;
+}
+.n3 .num {
+	position: absolute;
+	margin: 10px;
+	right: 36%;
+	bottom: 36%;
+	font-size: 2em;
+}
+/*six*/
+.six .num:nth-child(1) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.six .num:nth-child(2) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 37%;
+	font-size: 2em;
+}
+.six .num:nth-child(3) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 64%;
+	font-size: 2em;
+}
+.six .num:nth-child(4) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.six .num:nth-child(5) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 37%;
+	font-size: 2em;
+}
+.six .num:nth-child(6) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 64%;
+	font-size: 2em;
+}
+/*seven*/
+.seven .num:nth-child(1) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.seven .num:nth-child(2) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 37%;
+	font-size: 2em;
+}
+.seven .num:nth-child(3) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 64%;
+	font-size: 2em;
+}
+.seven .num:nth-child(4) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.seven .num:nth-child(5) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 37%;
+	font-size: 2em;
+}
+.seven .num:nth-child(6) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 64%;
+	font-size: 2em;
+}
+.seven .num:nth-child(7) {
+	position: absolute;
+	margin: 10px;
+	left: 36%;
+	bottom: 51%;
+	font-size: 2em;
+}
+/*Eight*/
+.eight .num:nth-child(1) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.eight .num:nth-child(2) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 37%;
+	font-size: 2em;
+}
+.eight .num:nth-child(3) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 64%;
+	font-size: 2em;
+}
+.eight .num:nth-child(4) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.eight .num:nth-child(5) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 37%;
+	font-size: 2em;
+}
+.eight .num:nth-child(6) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 64%;
+	font-size: 2em;
+}
+.eight .num:nth-child(7) {
+	position: absolute;
+	margin: 10px;
+	left: 36%;
+	bottom: 51%;
+	font-size: 2em;
+}
+.eight .num:nth-child(8) {
+	position: absolute;
+	margin: 10px;
+	left: 36%;
+	bottom: 20%;
+	font-size: 2em;
+}
+/*nine*/
+.nine .num:nth-child(1) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.nine .num:nth-child(2) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 10%;
+	font-size: 2em;
+}
+.nine .num:nth-child(3) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	bottom: 25%;
+	font-size: 2em;
+}
+.nine .num:nth-child(4) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	bottom: 25%;
+	font-size: 2em;
+}
+.nine .num:nth-child(5) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	top: 10%;
+	font-size: 2em;
+}
+.nine .num:nth-child(6) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	top: 10%;
+	font-size: 2em;
+}
+.nine .num:nth-child(7) {
+	position: absolute;
+	margin: 10px;
+	right: 10%;
+	top: 25%;
+	font-size: 2em;
+}
+.nine .num:nth-child(8) {
+	position: absolute;
+	margin: 10px;
+	left: 10%;
+	top: 25%;
+	font-size: 2em;
+}
+.nine .num:nth-child(9) {
+	position: absolute;
+	margin: 10px;
+	left: 36%;
+	top: 36%;
+	font-size: 2em;
+}
